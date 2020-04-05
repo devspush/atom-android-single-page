@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BaseCardViewStyle"
+    app:cardCornerRadius="@dimen/elevation_small"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="@dimen/elevation_extra_small">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_extra_large">
+
+        <ImageView
+            android:id="@+id/ivItemBg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_styled_image_height"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/image_desc_bg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@drawable/card_styled_bg_1"/>
+
+        <TextView
+            android:id="@+id/tvItemSubtitle"
+            style="@style/CardStyledSubtitle"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            app:layout_constraintTop_toBottomOf="@+id/ivItemBg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="ART AND DESIGN"/>
+
+        <TextView
+            android:id="@+id/tvItemTitle"
+            style="@style/CardStyledTitle"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            tools:text="A New Design Model That Helps People Change Their Lives"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemSubtitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvItemComments"
+            style="@style/CardStyledIconText"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:drawableStart="@drawable/ic_comment"
+            android:drawablePadding="@dimen/padding_normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemTitle"
+            tools:text="67" />
+
+        <ImageView
+            android:id="@+id/ivLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_heart"
+            android:layout_marginStart="@dimen/margin_extra_large"
+            android:layout_marginTop="@dimen/margin_large"
+            app:layout_constraintStart_toEndOf="@+id/tvItemComments"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemTitle"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvItemLikes"
+            style="@style/CardStyledIconText"
+            android:layout_marginStart="@dimen/padding_normal"
+            android:layout_marginTop="@dimen/margin_large"
+            app:layout_constraintStart_toEndOf="@+id/ivLike"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemTitle"
+            tools:text="718" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

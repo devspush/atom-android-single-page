@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Main Theme colors-->
+    <color name="colorPrimary">#056BFF</color>
+    <color name="colorPrimaryDark">#273238</color>
+    <color name="colorAccent">#056BFF</color>
+
+    <color name="colorButtonPrimary">#1DB293</color>
+    <color name="colorButtonPrimaryClicked">#157a65</color>
+    <color name="colorButtonDark">#0E213D</color>
+    <color name="colorButtonDarkClicked">#050f1f</color>
+    <color name="colorTag2">#CAEBE5</color>
+    <color name="colorTag3">#C6DCFB</color>
+
+    <!--Common-->
+    <color name="colorButtonDisabled">#999999</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="colorBackground">#F6F8FA</color>
+
+    <color name="colorTextDark">#0E213D</color>
+    <color name="colorTextLight">#556783</color>
+    <color name="colorTexExtraLight">#CFE1F2</color>
+    <color name="colorTextWhite">#FFFFFF</color>
+
+    <color name="colorCardBgLight">#556783</color>
+
+</resources>

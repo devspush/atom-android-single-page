@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Atom</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">UI Kit</string>
+    <string name="nav_header_subtitle">Multi-Purpose Starter \nTemplate for Android</string>
+    <string name="nav_header_button">Purchase Now</string>
+    <string name="action_settings">Settings</string>
+    <string name="base_title"><b>Atom</b>UI</string>
+
+    <!--ImageView content descriptions-->
+    <string name="image_desc_icon">Icon</string>
+    <string name="image_desc_bg">Background</string>
+
+    <!--Left menu viewItems-->
+    <string name="left_menu_cards">Cards</string>
+
+    <!--Home-->
+    <string name="home_subtitle_1">50+ Screen templates</string>
+    <string name="home_title">True <b>Multi-Purpose</b> \nAndroid Template</string>
+    <string name="home_subtitle_2">Design files</string>
+    <string name="home_text_1">Design files are included in package. Work with you designer in any design software (Sketch, Adobe Xd, Photoshop, or Figma)</string>
+    <string name="home_subtitle_3">Documentation</string>
+    <string name="home_text_2">Constantly updated, well written and organised online documentation.</string>
+    <string name="home_subtitle_4">List of useful features</string>
+    <string name="home_button_text">Visit docs</string>
+    <string name="home_subtitle_5">Visit our website</string>
+    <string name="home_desc">Speed up your projects with DevsPush themes, templates &amp; tutorials. We are specialized in creating beautiful resources on Ionic, Android &amp; Flutter platforms with Sketch, Photoshop, Adobe Xd &amp; Figma resources files.</string>
+    <string name="home_list_text_1">Firebase Integration</string>
+    <string name="home_list_text_2">Responsive</string>
+    <string name="home_list_text_3">6 colors combinations</string>
+    <string name="home_list_text_4">PWA ready</string>
+    <string name="dev_push_site">Devspush.com</string>
+
+    <!--List Views-->
+    <string name="styled_cards">Social - Simple</string>
+    <string name="list_button_text_2">Following</string>
+    <string name="list_button_text_5">Follow</string>
+    <string name="on_comment_click">Comment clicked</string>
+
+    <!--Parallax-->
+
+    <!--Login/Register/Forgot Password-->
+
+    <!--Wizard-->
+    <string name="wizard_prev">Prev</string>
+    <string name="wizard_next">Next</string>
+    <string name="wizard_finish">Finish</string>
+    <string name="wizard_title_one"><b>Atom</b> UI Kit</string>
+    <string name="wizard_subtitle_one">Lorem ipsum dolor sit amet, consectetur \nadipiscing elit. Suspendisse a aliquam</string>
+    <string name="wizard_title_two"><b>Atom</b> UI Kit</string>
+    <string name="wizard_subtitle_two">Lorem ipsum dolor sit amet, consectetur \nadipiscing elit. Suspendisse a aliquam</string>
+    <string name="wizard_title_three"><b>Atom</b> UI Kit</string>
+    <string name="wizard_subtitle_three">Lorem ipsum dolor sit amet, consectetur \nadipiscing elit. Suspendisse a aliquam</string>
+
+    <!--Splash Screen-->
+    <string name="splash_title">AtomUI \nDevsPush</string>
+</resources>

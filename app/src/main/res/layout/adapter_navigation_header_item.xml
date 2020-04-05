@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_menu_header_height"
+    android:background="?attr/colorBgDark">
+
+    <ImageView
+        android:id="@+id/ivNavLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/image_desc_icon"
+        android:layout_marginTop="@dimen/margin_ultra_larger"
+        android:layout_marginStart="@dimen/margin_extra_extra_large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_atom_logo"/>
+
+    <TextView
+        android:id="@+id/tvNavTitle"
+        style="@style/NavigationTitleBoldStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivNavLogo"/>
+
+    <TextView
+        style="@style/NavigationTitleStyle"
+        app:layout_constraintStart_toEndOf="@+id/tvNavTitle"
+        app:layout_constraintTop_toBottomOf="@+id/ivNavLogo"/>
+
+    <TextView
+        android:id="@+id/tvNavSubtitle"
+        style="@style/NavigationSubTitleStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNavTitle" />
+    
+    <Button
+        android:id="@+id/btnNavPurchaseNow"
+        style="@style/ButtonStyle"
+        android:text="@string/nav_header_button"
+        android:layout_marginStart="@dimen/margin_extra_extra_large"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginBottom="@dimen/margin_extra_extra_large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNavSubtitle"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

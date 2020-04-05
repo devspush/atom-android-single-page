@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".components.base.GenericActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/MainToolbarStyle"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:onClick="onBackButtonClick"
+                    style="@style/BackButtonStyle"
+                    android:contentDescription="@string/image_desc_icon"/>
+
+                <TextView
+                    android:id="@+id/toolbarTitle"
+                    style="@style/ToolbarTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/margin_ultra_ultra_large"
+                    android:ellipsize="end"
+                    android:singleLine="true" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_generic" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

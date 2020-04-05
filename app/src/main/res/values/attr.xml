@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorBgPrimary" format="reference"/>
+    <attr name="colorBgDark" format="reference"/>
+    <attr name="colorBgPrimaryLight" format="reference"/>
+    <attr name="colorButtonLight" format="reference"/>
+    <attr name="colorButtonPrimary" format="reference"/>
+    <attr name="colorButtonPrimaryClicked" format="reference"/>
+    <attr name="colorButtonDark" format="reference"/>
+    <attr name="colorButtonDarkClicked" format="reference"/>
+</resources>

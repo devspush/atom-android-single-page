@@ -1,0 +1,55 @@
+<resources>
+    <!-- Template -->
+    <dimen name="icon_size_normal">24dp</dimen>
+
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_normal">8dp</dimen>
+    <dimen name="margin_large">12dp</dimen>
+    <dimen name="margin_extra_large">16dp</dimen>
+    <dimen name="margin_extra_extra_large">24dp</dimen>
+    <dimen name="margin_ultra_larger">48dp</dimen>
+    <dimen name="margin_ultra_ultra_large">64dp</dimen>
+
+    <dimen name="padding_normal">8dp</dimen>
+    <dimen name="padding_large">12dp</dimen>
+    <dimen name="padding_extra_large">16dp</dimen>
+    <dimen name="padding_extra_larger">24dp</dimen>
+
+    <dimen name="text_size_regular">12sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_toolbar_title">18sp</dimen>
+    <dimen name="text_size_extra_large">20sp</dimen>
+    <dimen name="text_size_nav_title">24sp</dimen>
+
+    <dimen name="elevation_extra_small">2dp</dimen>
+    <dimen name="elevation_small">4dp</dimen>
+    <dimen name="elevation_large">12dp</dimen>
+
+    <!--Common-->
+    <dimen name="base_button_width">127dp</dimen>
+    <dimen name="base_button_height">40dp</dimen>
+
+    <!--Home-->
+    <dimen name="home_card_height">282dp</dimen>
+    <dimen name="home_card_height_smaller">245dp</dimen>
+    <dimen name="home_button_width">93dp</dimen>
+    <dimen name="home_logo_width">160dp</dimen>
+    <dimen name="home_logo_height">40dp</dimen>
+    <dimen name="nav_menu_header_height">280dp</dimen>
+
+    <!--Wizard-->
+    <dimen name="wizard_image_size">180dp</dimen>
+
+    <!--List-->
+
+    <!--Card-->
+    <dimen name="card_styled_image_height">170dp</dimen>
+
+    <!--Wizard-->
+
+    <!--Login-->
+
+    <!--Splash-->
+    <dimen name="icon_logo_size">100dp</dimen>
+</resources>

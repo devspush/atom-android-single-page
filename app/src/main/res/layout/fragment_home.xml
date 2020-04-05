@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorBackground">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_card_height"
+            android:layout_margin="@dimen/margin_extra_extra_large"
+            app:cardBackgroundColor="?attr/colorBgDark"
+            app:cardCornerRadius="@dimen/elevation_small"
+            app:cardElevation="@dimen/elevation_extra_small">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_extra_larger">
+
+                <ImageView
+                    android:id="@+id/ivLogoIonic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ionic_logo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tvSubtitle1"
+                    style="@style/HomeSubtitleStyle"
+                    android:text="@string/home_subtitle_1"
+                    android:textColor="@color/colorTexExtraLight"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivLogoIonic"
+                    app:layout_constraintBottom_toTopOf="@+id/tvTitle"/>
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    style="@style/HomeTitleStyle"
+                    android:text="@string/home_title"
+                    android:layout_marginBottom="@dimen/margin_extra_large"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/btnPurchase"/>
+
+                <Button
+                    android:id="@+id/btnPurchase"
+                    style="@style/ButtonStyle"
+                    android:text="@string/nav_header_button"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_card_height_smaller"
+            android:layout_marginStart="@dimen/margin_extra_extra_large"
+            android:layout_marginEnd="@dimen/margin_extra_extra_large"
+            android:layout_marginBottom="@dimen/margin_extra_extra_large"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="@dimen/elevation_small"
+            app:cardElevation="@dimen/elevation_extra_small">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_extra_larger">
+
+                <TextView
+                    android:id="@+id/tvSubtitle2"
+                    style="@style/HomeSubtitleStyle"
+                    android:text="@string/home_subtitle_2"
+                    android:layout_marginTop="@dimen/margin_large"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    style="@style/HomeTextStyle"
+                    android:text="@string/home_text_1"
+                    android:textColor="@color/colorTextDark"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSubtitle2"
+                    app:layout_constraintBottom_toTopOf="@+id/ivSketch"/>
+
+                <ImageView
+                    android:id="@+id/ivSketch"
+                    style="@style/HomeLogoStyle"
+                    android:background="@drawable/sketch"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/ivPhotoShop"
+                    style="@style/HomeLogoStyle"
+                    android:layout_marginStart="@dimen/margin_normal"
+                    android:background="@drawable/photoshop"
+                    app:layout_constraintStart_toEndOf="@+id/ivSketch"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/ivAdobeXd"
+                    style="@style/HomeLogoStyle"
+                    android:layout_marginStart="@dimen/margin_normal"
+                    android:background="@drawable/adobe_xd"
+                    app:layout_constraintStart_toEndOf="@+id/ivPhotoShop"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/ivFigma"
+                    style="@style/HomeLogoStyle"
+                    android:layout_marginStart="@dimen/margin_normal"
+                    android:background="@drawable/figma"
+                    app:layout_constraintStart_toEndOf="@+id/ivAdobeXd"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_card_height"
+            android:layout_marginStart="@dimen/margin_extra_extra_large"
+            android:layout_marginEnd="@dimen/margin_extra_extra_large"
+            android:layout_marginBottom="@dimen/margin_extra_extra_large"
+            app:cardBackgroundColor="@color/colorCardBgLight"
+            app:cardCornerRadius="@dimen/elevation_small"
+            app:cardElevation="@dimen/elevation_extra_small">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_extra_larger">
+
+                <ImageView
+                    android:id="@+id/ivLogoDocs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_files_and_folders"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tvSubtitle3"
+                    style="@style/HomeSubtitleStyle"
+                    android:text="@string/home_subtitle_3"
+                    android:textColor="@color/colorTextWhite"
+                    android:layout_marginTop="@dimen/margin_extra_large"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivLogoDocs"
+                    app:layout_constraintBottom_toTopOf="@+id/tvText"/>
+
+                <TextView
+                    android:id="@+id/tvText"
+                    style="@style/HomeTextStyle"
+                    android:text="@string/home_text_2"
+                    android:layout_marginBottom="@dimen/margin_extra_large"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSubtitle3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/btnDocs"/>
+
+                <Button
+                    android:id="@+id/btnDocs"
+                    style="@style/ButtonDarkStyle"
+                    android:text="@string/home_button_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_extra_extra_large"
+            android:layout_marginEnd="@dimen/margin_extra_extra_large"
+            android:layout_marginBottom="@dimen/margin_extra_extra_large"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="@dimen/elevation_small"
+            app:cardElevation="@dimen/elevation_extra_small">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_extra_larger">
+
+                <TextView
+                    android:id="@+id/tvSubtitle4"
+                    style="@style/HomeSubtitleStyle"
+                    android:text="@string/home_subtitle_4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_large"
+                    android:layout_marginBottom="@dimen/padding_large">
+
+                    <TextView
+                        style="@style/HomeListStyle"
+                        android:text="@string/home_list_text_1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/image_desc_icon"
+                        android:src="@drawable/ic_check_mark_circle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/HomeListStyle"
+                        android:text="@string/home_list_text_2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/image_desc_icon"
+                        android:src="@drawable/ic_check_mark_circle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_large"
+                    android:layout_marginBottom="@dimen/padding_large">
+
+                    <TextView
+                        style="@style/HomeListStyle"
+                        android:text="@string/home_list_text_3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/image_desc_icon"
+                        android:src="@drawable/ic_check_mark_circle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/HomeListStyle"
+                        android:text="@string/home_list_text_4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/image_desc_icon"
+                        android:src="@drawable/ic_check_mark_circle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_extra_extra_large"
+            android:layout_marginEnd="@dimen/margin_extra_extra_large"
+            android:layout_marginBottom="@dimen/margin_extra_extra_large"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="@dimen/elevation_small"
+            app:cardElevation="@dimen/elevation_extra_small">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_extra_larger">
+
+                <ImageView
+                    android:id="@+id/ivDevLogo"
+                    android:layout_width="@dimen/home_logo_width"
+                    android:layout_height="@dimen/home_logo_height"
+                    android:background="@drawable/dev_logo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tvSubtitle5"
+                    style="@style/HomeSubtitleStyle"
+                    android:text="@string/home_subtitle_5"
+                    android:layout_marginTop="@dimen/margin_extra_large"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivDevLogo"
+                    app:layout_constraintBottom_toTopOf="@+id/tvDesc"/>
+
+                <TextView
+                    android:id="@+id/tvDesc"
+                    style="@style/HomeTextStyle"
+                    android:text="@string/home_desc"
+                    android:textColor="@color/colorTextDark"
+                    android:layout_marginTop="@dimen/margin_extra_large"
+                    android:layout_marginBottom="@dimen/margin_extra_large"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSubtitle5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/btnDevPush"/>
+
+                <Button
+                    android:id="@+id/btnDevPush"
+                    style="@style/ButtonStyle"
+                    android:text="@string/dev_push_site"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
