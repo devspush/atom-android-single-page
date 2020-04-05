@@ -1,6 +1,5 @@
 # Atom Android Single page
-This is an simple demostration of Atom app. 
-Application is created by [DevsPush].
+This is an simple demostration of Atom app created by [DevsPush].
 
 ### Language
 * Kotlin
